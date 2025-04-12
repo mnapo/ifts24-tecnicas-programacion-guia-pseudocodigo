@@ -1,0 +1,100 @@
+50. Realice los ejercicios 25, 37, 38, 43 y 46 del capítulo anterior en pseudocódigo.
+
+Problema 25: Mostrar la mínima altura registrada de un grupo de 30 personas y
+además en qué ubicación se encuentra.
+
+Proceso Problema25
+    //Altura, AlturaMinima decimales
+    //Ubicacion entero
+    Para i=1 Hasta 30 Con Paso 1 Hacer
+        Leer Altura
+        Si Altura<=AlturaMinima Entonces
+            AlturaMinima<-Altura
+            Ubicacion<-i
+        Fin Si
+    Fin Para
+    Escribir "Altura mínima: ", AlturaMinima
+    Escribir "Ubicación: ", Ubicacion
+FinProceso
+
+Problema 37: Realice un algoritmo que permita ingresar 10 edades de personas para luego hallar y mostrar el % de gente mayor de edad (≥ 18) y el % de menores de edad.
+
+Proceso Problema37
+    //Edad, Mayores, Menores enteros
+    Para i=1 Hasta 10 Con Paso 1 Hacer
+        Leer Edad
+        Si Edad>=18 Entonces
+            Mayores<-Mayores+1
+        Sino
+            Menores<-Menores+1
+        Fin Si
+    Fin Para
+    Ecribir "% Mayores: ", Mayores*10
+    Ecribir "% Menores: ", Menores*10
+FinProceso
+
+Problema 38: Crear un algoritmo que genere al azar 5 números de la ruleta (del 0 al 36) y muestre el % de números pares, % de impares y % de ceros generados.
+
+Proceso Problema38
+    //Numero, Pares, Impares, Ceros enteros
+    Para i=1 Hasta 5 Con Paso 1 Hacer
+        Numero<-azar(36)
+        Si Numero=0 Entonces
+            Ceros<-Ceros+1
+        Sino
+            Si Numero%2=0 Entonces
+                Pares<-Pares+1
+            Sino
+                Impares<-Impares+1
+        Fin Si
+    Fin Para
+    Ecribir "% Ceros: ", Ceros*20
+    Ecribir "% Pares: ", Pares*20
+    Ecribir "% Impares: ", Impares*20
+FinProceso
+
+Problema 43: Diseñar un algoritmo que lea desde teclado la información sobre altura, edad, y sexo (F/M) de los participantes de un curso. La lectura finaliza cuando se lee un valor de altura negativo. Luego calcule:
+a. Promedio de altura de las mujeres.
+b. Promedio de altura de los varones.
+c. Promedio de edad de los participantes.
+
+Proceso Problema43
+    //Altura, AlturaVarones, AlturaMujeres decimal
+    //Edad, Varones, Mujeres, TotalEdad, Participantes entero
+    //Sexo caracter
+    Mientras Altura>=0 Hacer
+        Participantes<-Participantes+1
+        Leer Altura, Edad, Sexo
+        Si Sexo="F" Entonces
+            Mujeres<-Mujeres+1
+            AlturaMujeres<-AlturaMujeres+Altura
+        Sino
+            Varones<-Varones+1
+            AlturaVarones<-AlturaVarones+Altura
+        Fin Si
+        TotalEdad<-TotalEdad+Edad
+    Fin Mientras
+    Escribir "Promedio de altura de las mujeres: ", AlturaMujeres/Mujeres
+    Escribir "Promedio de altura de los varones: ", AlturaVarones/Varones
+    Escribir "Promedio de edad: ", TotalEdad/Participantes
+FinProceso
+
+Problema 46: Se leen desde teclado números hasta que la suma de los mismos llegue a 1000. Mientras tanto debe hallar:
+a. La cantidad de números múltiplos de 6.
+b. La suma de los números que se encuentran entre el 1 y el 10
+(incluidos).
+
+Proceso Problema46
+    //Numero, MultiplosDe6, Entre1y10, Sumatoria enteros
+    Mientras Sumatoria<1000 Hacer
+        Sumatoria<-Sumatoria+Numero
+        Si Numero%6=0 Entonces
+            MultiplosDe6<-MultiplosDe6+1
+        Fin Si
+        Si Numero>0 Y Numero<11 Entonces
+            Entre1y10<-Entre1y10+1
+        Fin Si
+    Fin Mientras
+    Escribir "# Múltiplos de 6: ", MultiplosDe6
+    Escribir "# Entre 1 y 10: ", Entre1y10
+FinProceso
