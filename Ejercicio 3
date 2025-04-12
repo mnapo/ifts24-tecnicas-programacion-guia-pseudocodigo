@@ -1,0 +1,31 @@
+3. Se generan números enteros en forma aleatoria entre [0 y 200] hasta
+que la sumatoria de los mismos sea mayor a 500. Al finalizar indicar:
+a. La cantidad de números nulos (0) leídos.
+b. La sumatoria de los números que se encuentran entre el 10 y el 100 (incluidos).
+c. El promedio de los números menores a 150.
+d. El número mayor generado.
+
+Proceso Ejercicio3
+    //Numero, Sumatoria, Nulos, Entre1y100, Menores150, SumatoriaMenores150, Mayor enteros
+    Mientras Sumatoria<=500 Hacer
+        Numero<-azar(200)
+        Sumatoria<-Sumatoria+Numero
+        Si Numero=0 Entonces
+            Nulos<-Nulos+1
+        Fin Si
+        Si Numero>=10 Y Numero<=100 Entonces
+            Entre1y100<-Entre1y100+Numero
+        Fin Si
+        Si Numero<150 Entonces
+            Menores150<-Menores150+1
+            SumatoriaMenores150<-SumatoriaMenores150+Numero
+        Fin Si
+        Si Numero>Mayor Entonces
+            Mayor<-Numero
+        Fin-Si
+    Fin Mientras
+    Escribir "# Nulos: ", Nulos
+    Escribir "Sumatoria entre 1 y 10: ", Entre1y100
+    Escribir "Promedio menores a 150: ", SumatoriaMenores150/Menores150
+    Escribir "Mayor: ", Mayor
+FinProceso

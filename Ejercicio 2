@@ -1,0 +1,23 @@
+2. Se ingresan 10 números por teclado para hallar tres datos:
+  a. La cantidad de números negativos.
+  b. La suma de los números que se encuentran entre el 1 y el 10 (no
+incluidos).
+  c. El promedio de todos los números.
+
+Proceso Ejercicio2
+    //Numero, Negativos, Entre1y10, Total enteros
+    Para i<-1 Hasta 10 Con Paso 1
+        Leer Numero
+        Si Numero < 0 Entonces
+            Negativos<-Negativos+1
+        Sino
+            Si Numero > 1 Y Numero < 10 Entonces
+                Entre1y10<-Entre1y10+1
+            Fin Si
+        Fin Si
+        Total<-Total+Numero
+    Fin Para
+    Escribir "# Negativos: ", Negativos
+    Escribir "# Entre 1 y 10: ", Entre1y10
+    Escribir "Promedio: ", Total/10
+FinProceso

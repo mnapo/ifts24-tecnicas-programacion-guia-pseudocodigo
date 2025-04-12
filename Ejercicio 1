@@ -1,0 +1,18 @@
+1. Se ingresan por teclado 10 pares de temperaturas (T1 y T2) para hallar el promedio de las temperaturas que están entre 5° y 15° (incluidos).
+
+Proceso Ejercicio1
+    //Total entero
+    Para i<-1 Hasta 10 Con Paso 1 Hacer
+        //T1, T2, Cantidad enteros
+        Leer T1, T2
+        Si T1>4 Y T1<16 Entonces
+            Cantidad<-Cantidad+1
+            Total<-Total+T1
+        Fin Si
+        Si T2>4 Y T2<16 Entonces
+            Cantidad<-Cantidad+1
+            Total<-Total+T2
+        Fin Si
+    Fin Para
+    Escribir "Promedio: ", Total/Cantidad
+FinProceso
