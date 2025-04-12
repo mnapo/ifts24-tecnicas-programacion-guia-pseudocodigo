@@ -1,4 +1,4 @@
-2. Se ingresan 10 números por teclado para hallar tres datos:
+47. Se ingresan 10 números por teclado para hallar tres datos:
   a. La cantidad de números negativos.
   b. La suma de los números que se encuentran entre el 1 y el 10 (no
 incluidos).
@@ -6,7 +6,7 @@ incluidos).
 
 Proceso Ejercicio2
     //Numero, Negativos, Entre1y10, Total enteros
-    Para i<-1 Hasta 10 Con Paso 1
+    Para i<-1 Hasta 10 Con Paso 1 Hacer
         Leer Numero
         Si Numero < 0 Entonces
             Negativos<-Negativos+1

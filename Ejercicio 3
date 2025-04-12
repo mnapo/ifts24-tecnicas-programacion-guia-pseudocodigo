@@ -1,4 +1,4 @@
-3. Se generan números enteros en forma aleatoria entre [0 y 200] hasta
+48. Se generan números enteros en forma aleatoria entre [0 y 200] hasta
 que la sumatoria de los mismos sea mayor a 500. Al finalizar indicar:
 a. La cantidad de números nulos (0) leídos.
 b. La sumatoria de los números que se encuentran entre el 10 y el 100 (incluidos).

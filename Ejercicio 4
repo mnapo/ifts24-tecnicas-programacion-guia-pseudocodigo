@@ -1,4 +1,4 @@
-4. La sucesión de Fibonacci genera la siguiente secuencia de números: 1, 1, 2, 3, 5, 8 etcétera. Es decir que se obtiene de sumar los dos números anteriores.
+49. La sucesión de Fibonacci genera la siguiente secuencia de números: 1, 1, 2, 3, 5, 8 etcétera. Es decir que se obtiene de sumar los dos números anteriores.
 El siguiente es el término general: an=an-1+an-2
 Se pide que diseñe un programa que le solicite al usuario un número entero positivo K y luego muestre en pantalla el K-ésimo término de la sucesión de Fibonacci. Por ejemplo, si el usuario ingresa por teclado el número 10 entonces el algoritmo debe mostrar el valor correspondiente a a10.
 
@@ -8,6 +8,7 @@ Proceso Ejercicio4
     N2<-1
     Escribir N1
     Escribir N2
+    Leer Maximo
     HACER
         //Temporal entero
         Temporal<-N2
