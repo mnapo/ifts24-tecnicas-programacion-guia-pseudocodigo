@@ -24,3 +24,6 @@ El siguiente es el término general: an=an-1+an-2
 Se pide que diseñe un programa que le solicite al usuario un número entero positivo K y luego muestre en pantalla el K-ésimo término de la sucesión de Fibonacci. Por ejemplo, si el usuario ingresa por teclado el número 10 entonces el algoritmo debe mostrar el valor correspondiente a a10.
 
 5. Realice los ejercicios 25, 37, 38, 43 y 46 del capítulo anterior en pseudocódigo.
+
+### Índice Guías
+https://github.com/mnapo/ifts24-guias-primer-cuatrimestre
